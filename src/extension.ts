@@ -16,8 +16,20 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposable = vscode.commands.registerCommand('shira-yuki23.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Pastella !');
+		vscode.window.showInformationMessage('Pastella started!');
 	});
+
+	
+	const editorListener = vscode.window.onDidChangeActiveTextEditor(editor => {
+	if (!editor) return;
+
+	const lang = editor.document.languageId;
+	console.log("Language Detected:", lang);	
+
+	});
+
+	context.subscriptions.push(editorListener);//editor listener bcz everyone should be disposed when extension stops 
+
 
 	context.subscriptions.push(disposable);
 }
