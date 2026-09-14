@@ -23,6 +23,20 @@ export function activate(context: vscode.ExtensionContext) {
 			console.error('Couldnt change theme:', error);
 		}
 	}
+	if(lang =='python')
+	{
+		const config= vscode.workspace.getConfiguration('workbench');
+		try{
+			await config.update(
+				'colorTheme', 
+				'Huacat Pink Theme', 
+				vscode.ConfigurationTarget.Global
+			);
+			console.log('Theme changed for JS!');
+		}catch(error){
+			console.error('Couldnt change theme:', error);
+		}
+	}
 	});
 	//theme detc
 	const config= vscode.workspace.getConfiguration('workbench');
