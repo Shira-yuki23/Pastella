@@ -2,7 +2,13 @@
   "name": "pastella-by-shira-yuki23",
   "displayName": "Pastella ",
   "description": "Bringing code to life so organised and dipped in color🌈",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "FarihaMusfiratShifa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shira-yuki23/Pastella.git"
+  },
   "engines": {
     "vscode": "^1.107.0"
   },
@@ -15,19 +21,25 @@
 
   "main": "./dist/extension.js",
 "contributes": {
-    "configuration": {
-        "title": "Pastella",
-        "properties": {
-            "pastella.languageThemes": {
-                "type": "object",
-                "default": {
-                    "javascript": "Abyss",
-                    "python": "Huacat Pink Theme"
-                },
-                "description": "Maps VS Code language IDs to colour themes."
-            }
-        }
+  "commands": [
+    {
+      "command": "pastella.openLanguageThemePanel",
+      "title": "Pastella: Language Themes"
     }
+  ],
+  "configuration": {
+    "title": "Pastella",
+    "properties": {
+      "pastella.languageThemes": {
+        "type": "object",
+        "default": {
+          "javascript": "Abyss",
+          "python": "Huacat Pink Theme"
+        },
+        "description": "Maps VS Code language IDs to colour themes."
+      }
+    }
+  }
 },
   "scripts": {
     "vscode:prepublish": "npm run package",
