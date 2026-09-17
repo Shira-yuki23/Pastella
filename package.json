@@ -14,14 +14,21 @@
   "activationEvents": ["onStartupFinished"],
 
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "shira-yuki23.helloWorld",
-        "title": "Start Pastella"
-      }
-    ]
-  },
+"contributes": {
+    "configuration": {
+        "title": "Pastella",
+        "properties": {
+            "pastella.languageThemes": {
+                "type": "object",
+                "default": {
+                    "javascript": "Abyss",
+                    "python": "Huacat Pink Theme"
+                },
+                "description": "Maps VS Code language IDs to colour themes."
+            }
+        }
+    }
+},
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",

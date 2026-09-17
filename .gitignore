@@ -3,3 +3,8 @@ dist
 node_modules
 .vscode-test/
 *.vsix
+
+# Local Pastella theme-switching test files
+z.py
+z.cpp
+z.java
