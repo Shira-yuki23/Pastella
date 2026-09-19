@@ -2,9 +2,10 @@
   "name": "pastella-by-shira-yuki23",
   "displayName": "Pastella: Code in colour!",
   "description": "Bringing code to life so organised and dipped in color🌈",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "FarihaMusfiratShifa",
   "license": "MIT",
+  "icon": "PastellaLogo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Shira-yuki23/Pastella.git"
