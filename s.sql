@@ -1,1 +1,0 @@
-SELECT 'Hello from SQL!' AS message;
