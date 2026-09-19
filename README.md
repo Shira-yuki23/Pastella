@@ -2,6 +2,11 @@
 
 **Bringing code to life — organised and dipped in color. 🌈**
 
+<p align="center">
+  <img src="./Pastella.gif" alt="Pastella theme switching demo" width="850">
+</p>
+
+
 Pastella is a VS Code extension that automatically changes your color theme depending on the programming language you're currently working with.
 
 Working on Python? Give it a soft pink theme.  
